@@ -20,21 +20,21 @@
 
     <h2>Contact Me</h2>
     <form data-netlify="true">
-    <label for="name">Name: </label>
-    <input type="text" id="name" name="name" required><br><br>
+    <label for="name">Name:  <input type="text" name="name" required> </label>
+   
+    <label for="email">Email: <input type="email" name="email" required><br><br></label>
+    
 
-    <label for="email">Email: </label>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="reason">Reason for Contact: </label>
-    <select id="reason" name="reason">
+    <label for="reason">Reason for Contact: 
+        <select id="reason" name="reason">
         <option value="hi">Saying hi</option>
         <option value="contractor">Looking for a contractor</option>
         <option value="interview">Interested in an interview</option>
-    </select><br><br>
+        </select>
+    </label>
+    
 
-    <label for="message">Message: </label><br>
-    <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+    <label for="message">Message:<textarea id="message" name="message" rows="5" cols="40"></textarea></label><br>
 
     <button type="submit">Submit</button>
     </form>
