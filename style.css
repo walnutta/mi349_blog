@@ -1,0 +1,176 @@
+/**Basic Layout*/
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #e7ebe6;
+  margin: 0;
+  padding: 0;
+}
+
+#main-header {
+  background:#296376;
+  padding: 10px;
+}
+header {
+  background:#e7ebe6;
+  padding: 10px;
+}
+
+h1 {
+  font-weight: 1000;
+  color:#9EC1A3;
+}
+
+h2, h3, h4 {
+  font-weight: 700;
+  color: #296376;
+  text-align: center;
+}
+
+p, table, ul, li, time {
+  font-size: 50;
+  line-height: 1.6;
+  margin-bottom: 1;
+  color: #3F612D;
+}
+
+
+table {
+  border-collapse: collapse;  
+}
+
+th, td {
+  border: 1px solid #333;   
+  padding: 10px;           
+}
+
+div.news {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+form.news {
+  color: #3F612D;
+  background-color: #CFE0C3;
+  display: flex;
+  align-items: center;
+}
+
+div.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+form.contact {
+  padding: 20px;
+  color: #3F612D;
+  background-color: #dff4c7;
+  border-radius: 10px;
+}
+
+button {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #3F612D;
+  border-radius: 2px;
+  width: 150px;
+  height: 40px;
+  margin: 20px;
+  color:#3F612D;
+  background: none;
+}
+
+button:hover {
+  background-color: #3F612D;
+  border: none;
+  color:#e1e5b3;
+}
+
+div.submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+/**Image*/
+
+div.container {
+  float: right;
+}
+
+img.float-right {
+  margin: 20px;
+  width: 200px;
+}
+.caption {
+  font-size: 1;
+  color: gray;
+}
+
+label {
+  display: block;
+  margin: 10px;
+}
+
+input, select {
+  color: #1F363D;  
+  margin-bottom: 5px;        /* space between label and input */
+  letter-spacing: 0.5px;  
+  border:none;
+  border-radius: 2px;
+  padding:6px;
+}
+
+/**Sticky navigation bar*/
+nav {
+  position: sticky;
+  top: 0;
+  background: #2c4e31;
+  color: white;
+  display: flex; 
+  justify-content: space-around;
+}
+
+nav a {
+  flex: 1;    
+  text-align: center;  
+  color: #1F363D;
+  margin:0;
+  padding: 10px;
+  background-color: #9EC1A3;
+  font-weight: 600;
+  font-variant: small-caps;
+}
+
+nav a:hover {
+  background-color:#e7ebe6;
+  color: #a2bb91;
+}
+
+a[target="home"]:active {
+  color: #ea8181;
+  text-decoration: underline;
+}
+a[target="other"]:active {
+  color: #7ac3c1;
+  text-decoration: underline;
+}
+/**Two-column Flexbox */
+section {
+  background: #e7ebe6; 
+  display: flex;
+}
+
+article {
+  background: #CFE0C3; 
+  padding: 20px;
+  margin: 20px
+}
+
+article:nth-of-type(1) {
+  flex: 1;
+}
+
+article:nth-of-type(2) {
+  flex: 2;
+}
