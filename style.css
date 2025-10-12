@@ -6,7 +6,8 @@ body {
   padding: 0;
 }
 
-#main-header {
+
+#main-header {                                /*id*/
   background:#296376;
   padding: 10px;
 }
@@ -112,13 +113,14 @@ label {
   margin: 10px;
 }
 
-input, select {
+input, select, textarea {
   color: #1F363D;  
   margin-bottom: 5px;        /* space between label and input */
   letter-spacing: 0.5px;  
   border:none;
   border-radius: 2px;
   padding:6px;
+  
 }
 
 /**Sticky navigation bar*/
@@ -147,24 +149,26 @@ nav a:hover {
   color: #a2bb91;
 }
 
-a[target="home"]:active {
-  color: #ea8181;
-  text-decoration: underline;
-}
-a[target="other"]:active {
+a[target="_self"]:active {
   color: #7ac3c1;
   text-decoration: underline;
 }
 /**Two-column Flexbox */
 section {
   background: #e7ebe6; 
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Only the articles flex, not the heading */
+.articles {
   display: flex;
 }
 
 article {
   background: #CFE0C3; 
   padding: 20px;
-  margin: 20px
+  margin: 20px;
 }
 
 article:nth-of-type(1) {
