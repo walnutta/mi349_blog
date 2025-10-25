@@ -6,8 +6,7 @@ body {
   padding: 0;
 }
 
-
-#main-header {                                /*id*/
+#main-header {                                
   background:#296376;
   padding: 10px;
 }
@@ -177,4 +176,129 @@ article:nth-of-type(1) {
 
 article:nth-of-type(2) {
   flex: 2;
+}
+
+
+/* Mobile devices - up to 576px */
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  #main-header {
+    padding: 15px 10px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    border-bottom: 1px solid #2c4e31;
+    padding: 15px;
+  }
+
+  .articles {
+    flex-direction: column;
+  }
+
+  article {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  div.container {
+    float: none;
+    width: 100%;
+  }
+
+  img.float-right {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  table {
+    font-size: 0.85em;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  form.news {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Tablets - 577px to 768px */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .articles {
+    flex-direction: column;
+  }
+
+  article {
+    margin: 15px 0;
+  }
+
+  img.float-right {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  div.container {
+    float: none;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 12px;
+  }
+}
+
+/* Medium screens - 769px to 992px */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  img.float-right {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  article {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
+
+/* Large screens - 993px and above */
+@media screen and (min-width: 993px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 25px;
+  }
+
+  article {
+    padding: 25px;
+  }
 }
